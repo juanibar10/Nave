@@ -9,8 +9,9 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Cruz
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP _USAGESTAGE_PIXEL
+    _USAGETYPE_LIGHT
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
@@ -40,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 08b8ec000db99ee4789ec9f9fa02041b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -60,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 4575f4306398c7145954d4b38155cd06, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -95,23 +96,27 @@ Material:
     - _DstBlend: 0
     - _FresnelScale: 0.75
     - _GerstnerIntensity: 1
-    - _GlossMapScale: 1
-    - _Glossiness: 1
+    - _GlossMapScale: 0.7
+    - _Glossiness: 0.698
     - _GlossyReflections: 1
+    - _LightingFactor: 1
     - _Metallic: 0
     - _Metallicity: 1
     - _Mode: 0
     - _NormalIntensity: 1
-    - _OcclusionStrength: 0
+    - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _Retro: 0
     - _Shininess: 200
     - _Smoothness: 12
     - _SmoothnessTextureChannel: 0
+    - _SoftParticleDistanceFade: 0.1
     - _SpecularHighlights: 1
     - _SpecularIntensity: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UsageStage: 0
+    - _UsageType: 0
     - _Wrap: 0.25
     - _ZWrite: 1
     m_Colors:
@@ -122,7 +127,7 @@ Material:
     - _BumpTiling: {r: 1, g: 1, b: -2, a: 3}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DistortParams: {r: 1, g: 1, b: 2, a: 1.15}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 2.151823, g: 4.237095, b: 4.237095, a: 1}
     - _GAmplitude: {r: 0.3, g: 0.35, b: 0.25, a: 0.25}
     - _GDirectionAB: {r: 0.3, g: 0.85, b: 0.85, a: 0.25}
     - _GDirectionCD: {r: 0.1, g: 0.9, b: 0.5, a: 0.5}
@@ -135,4 +140,5 @@ Material:
     - _ReflectionColor: {r: 0.53999996, g: 0.95, b: 0.98999995, a: 0.5}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularColor: {r: 0.72, g: 0.72, b: 0.72, a: 1}
+    - _TintColor: {r: 1, g: 1, b: 1, a: 1}
     - _WorldLightDir: {r: 0, g: 0.1, b: -0.5, a: 0}
